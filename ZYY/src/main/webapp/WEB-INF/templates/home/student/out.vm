@@ -1,0 +1,32 @@
+<div style="height:90%" >
+    <table id="tripTable"></table>
+    <div id="toolbar">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="addTrip()">离校申请</a>
+    </div>
+    <div id="tripDlg" class="easyui-dialog"
+         style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+         buttons="#dlg-buttons"
+         data-options="iconCls:'icon-save',resizable:true,modal:true">
+        <!-- 弹出框 -->
+        <form id="tripForm" method="post">
+            <div class="fitem">
+                <label>离校理由:</label>
+                <textarea name="reason" id="reason"> </textarea>
+            </div>
+            <div>
+                <label>离校时间:</label>
+                <input id="outdate" name="outdate" type="text" class="easyui-datebox">
+            </div>
+            <div>
+                <label>预计返校时间:</label>
+                <input id="indate" name="indate" type="text" class="easyui-datebox">
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok"
+           onclick="saveTrip()">申请</a> <a href="#" class="easyui-linkbutton"
+                                            iconCls="icon-cancel" onclick="javascript:$('#tripDlg').dialog('close')">取消</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/student/trip.js"></script>

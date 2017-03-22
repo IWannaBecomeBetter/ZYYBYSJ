@@ -1,0 +1,24 @@
+<body onkeydown="loginKeydown()">
+<!-- Preloader -->
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+<div align="center">
+    <form id="updateForm" >
+        <input name="id" value="$!{myself.id}" hidden>
+        <div>
+            <label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+            <input type="text" name="username" id="username" value="$!{myself.username}">
+        </div>
+        <div>
+            <label>联系方式</label>
+            <input type="text" name="telephone" id="telephone" value="$!{myself.telephone}">
+        </div>
+        <div>
+            <a id="update" class="easyui-linkbutton" iconCls="icon-ok" href="javascript:void(0)"
+               onclick="update()">确认</a>
+            <button class="easyui-linkbutton" iconCls="icon-cancel" href="javascript:void(0)" typr="reset">取消</button>
+        </div>
+    </form>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/student/update.js"></script>

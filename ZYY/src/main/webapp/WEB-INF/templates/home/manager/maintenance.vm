@@ -1,0 +1,23 @@
+<div style="height:100%" >
+    <table id="maintenanceTable"></table>
+    <div id="toolbar">
+        <form id="selectForm">
+            <table >
+                <tbody>
+                <tr>
+                    <td>维修状态:</td>
+                    <td>
+                        <select class="easyui-combobox" name="repairstate" id="repairstate" style="width: 100px" panelHeight="100">
+                            <option value="">全部</option>
+                            <option value="0">维修申报中</option>
+                            <option value="1">维修已完成</option>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <a href="#" class="easyui-linkbutton" iconcls="icon-search" onclick="doSearch()">查询</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/manager/maintenance.js"></script>

@@ -1,0 +1,23 @@
+<div style="height:100%">
+    <table id="resOutTable"></table>
+    <div id="resDlg" class="easyui-dialog"
+         style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+         buttons="#dlg-buttons"
+         data-options="iconCls:'icon-save',resizable:true,modal:true">
+        <!-- 弹出框 -->
+        <form id="resForm" method="post">
+            <input hidden name="id" id="id">
+            <input hidden name="resnum" id="resnum">
+            <div>
+                <label>物品数量:</label>
+                <input name="outnum" type="number" id="outnum"> </input>
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok"
+           onclick="saveRes()">出库</a> <a href="#" class="easyui-linkbutton"
+                                          iconCls="icon-cancel" onclick="javascript:$('#resDlg').dialog('close')">取消</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/manager/resOut.js"></script>

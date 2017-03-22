@@ -1,0 +1,23 @@
+#parse("sys_param.vm")
+#set($layout = "home_student_layout.vm")
+
+<div id="mainPanle" region="center" style="overflow: hidden;">
+    <div style="margin:20px 0 10px 0;" id="dormitoryDesc">
+        <span>寝室门牌号：$!{dormitory.doorplate}</span>
+        <span>寝室卫生等级：$!{dormitory.heathlevel}</span>
+        <span>剩余电费：$!{dormitory.electricityfees}</span>
+        <span>应缴水费：$!{dormitory.waterfees}</span>
+        <span>寝室长：$!{dormitory.leadername}</span>
+    </div>
+    <div>
+        <div id="p" class="easyui-panel"  title="Basic Panel"  data-options="fit:true,closed:true">
+
+            <a href="#" class="easyui-linkbutton" onclick="javascript:$('#p').panel('close')">Close</a>
+        </div>
+    </div>
+    <div id="tabs" class="easyui-tabs" fit="true" border="false">
+
+    </div>
+</div>
+
+

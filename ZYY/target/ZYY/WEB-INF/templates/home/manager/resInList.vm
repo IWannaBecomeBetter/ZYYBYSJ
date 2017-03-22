@@ -1,0 +1,28 @@
+<div style="height:100%">
+    <table id="resInTable"></table>
+    <div id="toolbar">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="inRes()">入库</a>
+    </div>
+    <div id="resDlg" class="easyui-dialog"
+         style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+         buttons="#dlg-buttons"
+         data-options="iconCls:'icon-save',resizable:true,modal:true">
+        <!-- 弹出框 -->
+        <form id="resForm" method="post">
+            <div class="fitem">
+                <label>物品名称:</label>
+                <textarea name="resname" id="resname"> </textarea>
+            </div>
+            <div>
+                <label>物品数量:</label>
+                <input name="resnum" type="number" id="resnum" min="1"> </input>
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok"
+           onclick="saveRes()">入库</a> <a href="#" class="easyui-linkbutton"
+                                          iconCls="icon-cancel" onclick="javascript:$('#resDlg').dialog('close')">取消</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/manager/resIn.js"></script>

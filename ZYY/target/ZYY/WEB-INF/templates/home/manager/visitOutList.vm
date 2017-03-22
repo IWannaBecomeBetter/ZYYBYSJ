@@ -1,0 +1,4 @@
+<div style="height:100%" >
+    <table id="visitInTable"></table>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/manager/visitOut.js"></script>

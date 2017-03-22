@@ -1,0 +1,24 @@
+<div style="height:90%" >
+    <table id="maintenanceTable"></table>
+    <div id="toolbar">
+    	<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="addRepair()">申报维修</a>
+    </div>
+    <div id="maintenanceDlg" class="easyui-dialog"
+         style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+         buttons="#dlg-buttons"
+         data-options="iconCls:'icon-save',resizable:true,modal:true">
+        <!-- 弹出框 -->
+        <form id="repairForm" method="post">
+            <div class="fitem">
+                <label>申报内容:</label>
+                <textarea name="description" id="description"> </textarea>
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok"
+           onclick="saveRepair()">申请</a> <a href="#" class="easyui-linkbutton"
+                                            iconCls="icon-cancel" onclick="javascript:$('#maintenanceDlg').dialog('close')">取消</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/student/maintenance.js"></script>

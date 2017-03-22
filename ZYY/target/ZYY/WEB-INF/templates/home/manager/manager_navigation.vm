@@ -1,0 +1,72 @@
+<div region="west" split="true" title="菜单栏" style="width: 200px;">
+<div id="aa" class="easyui-accordion" style="position: absolute; top: 27px; left: 0px; right: 0px; bottom: 0px;">
+    <div title="个人中心" iconcls="icon-save" select="true" style="overflow: auto; padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/changePassword">修改密码</a></span>
+            </li>
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/manager_update">个人信息修改</a></span>
+            </li>
+        </ul>
+    </div>
+##    <div title="入（退）宿" iconcls="icon-reload"  style="padding: 10px;">
+##        <ul class="easyui-tree">
+##            <li>
+##                <span><a src="$!{CONTEXT_PATH}/login">入宿</a></span>
+##            </li>
+##            <li>
+##                <span><a src="$!{CONTEXT_PATH}/login">退宿</a></span>
+##            </li>
+##        </ul>
+##    </div>
+    <div title="宿舍管理" iconcls="icon-reload" style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li style="padding-bottom: 5px">
+                <span><a src="$!{CONTEXT_PATH}/dormitory/list">宿舍列表</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="报修管理" iconcls="icon-reload" style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/maintenance">报修信息</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="访客出入" iconcls="icon-reload" style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/visit/list">访客来访</a></span>
+            </li>
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/visit/outList">访客离去</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="物品出入" iconcls="icon-reload" style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/res/inList">物品入库</a></span>
+            </li>
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/res/outList">物品出库</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="离（返）校" iconcls="icon-reload" style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/trip/list">学生离返校信息</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="学生信息管理" iconcls="icon-reload" style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/login">学生权限</a></span>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>

@@ -1,0 +1,6 @@
+<link href="$!{CONTEXT_PATH}/static/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+<link href="$!{CONTEXT_PATH}/static/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+<!--alerts CSS -->
+<link href="$!{CONTEXT_PATH}/static/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+<!-- toast CSS -->
+<link href="$!{CONTEXT_PATH}/static/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">

@@ -1,0 +1,6 @@
+<!-- 顶部菜单 -->
+<div region="north" border="true" split="true" style="overflow: hidden; height: 80px;">
+    <div class="top-bg" align="center">
+        <h1>宿舍管理系统</h1>
+    </div>
+</div>

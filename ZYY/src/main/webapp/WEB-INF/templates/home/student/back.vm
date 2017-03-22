@@ -1,0 +1,4 @@
+<div style="height:90%" >
+    <table id="outListTable"></table>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/student/outList.js"></script>

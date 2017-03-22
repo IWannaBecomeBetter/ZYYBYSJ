@@ -1,0 +1,31 @@
+<div region="west" split="true" title="菜单栏" style="width: 200px;">
+<div id="aa" class="easyui-accordion" style="position: absolute; top: 27px; left: 0px; right: 0px; bottom: 0px;">
+    <div title="个人中心" iconcls="icon-save" select="true" style="overflow: auto; padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/changePassword">修改密码</a></span>
+            </li>
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/student/update">个人信息修改</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="维修申报" iconcls="icon-reload"  style="padding: 10px;">
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/maintenance">我要申请维修</a></span>
+            </li>
+        </ul>
+    </div>
+    <div title="离返校申请" iconcls="icon-reload" >
+        <ul class="easyui-tree">
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/trip/back">我已返校</a></span>
+            </li>
+            <li>
+                <span><a src="$!{CONTEXT_PATH}/trip/out">申请离校</a></span>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>

@@ -1,0 +1,102 @@
+<div style="height:100%">
+    <table id="dormitoryTable"></table>
+    <div id="toolbar">
+        <form id="selectForm">
+            <table >
+                <tbody>
+                <tr>
+                    <td>卫生等级:</td>
+                    <td>
+                        <select class="easyui-combobox" name="tripstate" id="tripstate" style="width: 100px" panelHeight="100">
+                            <option value="">全部</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+        </form>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="addDormitory()">新增</a>
+        <a href="#" class="easyui-linkbutton" iconcls="icon-search" onclick="doSearch()">查询</a>
+    </div>
+
+    <div id="dormitoryDlg" class="easyui-dialog"
+         style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+         buttons="#dlg-buttons"
+         data-options="iconCls:'icon-save',resizable:true,modal:true">
+        <!-- 弹出框 -->
+        <form id="dormitoryForm" method="post">
+            <div class="fitem">
+                <label>寝室门牌:</label>
+                <input class="easyui-numberbox" type="tel" name="doorplate" id="doorplate"> </input>
+            </div>
+            <div class="fitem">
+                <label>预缴电费:</label>
+                <input class="easyui-numberbox" type="tel" name="electricityfees" id="electricityfees"> </input>
+            </div>
+            <div class="fitem">
+                <label>预缴水费:</label>
+                <input class="easyui-numberbox" type="tel" name="waterfees" id="waterfees"> </input>
+            </div>
+            <div class="fitem">
+                <label>卫生等级:</label>
+                <select class="easyui-combobox" name="heathlevel" id="heathlevel" style="width: 100px" panelHeight="150">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveDormitory()">新增</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dormitoryDlg').dialog('close')">取消</a>
+    </div>
+    <div id="studentDlg" class="easyui-dialog"
+         style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+         buttons="#studentdlg-buttons"
+         data-options="iconCls:'icon-save',resizable:true,modal:true">
+        <!-- 弹出框 -->
+        <form id="studentForm" method="post">
+            <input name="id" id="studentId" hidden>
+            <input name="dormitoryid" id="dormitoryId" hidden>
+            <div class="fitem">
+                <label>学生:</label>
+                <input class="easyui-combobox" id="roomMate"> </input>
+            </div>
+            <div class="fitem">
+                <label>代码:</label>
+                <input id="studentCode" readonly> </input>
+            </div>
+            <div class="fitem">
+                <label>姓名:</label>
+                <input id="studentName" readonly> </input>
+            </div>
+            <div class="fitem">
+                <label>联系方式:</label>
+                <input id="studentTelephone" readonly> </input>
+            </div>
+            <div class="fitem">
+                <label>床位:</label>
+                <select class="easyui-combobox" name="bed" id="bed" style="width: 100px" panelHeight="150">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div id="studentdlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="inDormitory()">新增</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#studentDlg').dialog('close')">取消</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/manager/dormitory.js"></script>

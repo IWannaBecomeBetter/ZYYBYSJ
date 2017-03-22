@@ -1,0 +1,28 @@
+<div style="height:100%" >
+    <table id="allTripTable"></table>
+    <div id="toolbar">
+        <form id="selectForm">
+            <table >
+                <tbody>
+                <tr>
+                    <td>离返校状态:</td>
+                    <td>
+                        <select class="easyui-combobox" name="tripstate" id="tripstate" style="width: 100px" panelHeight="100">
+                            <option value="">全部</option>
+                            <option value="0">离校中</option>
+                            <option value="1">已返校</option>
+                        </select>
+                    </td>
+##                    <td>离校时间（之后）: </td>
+##                    <td><input id="outDate" name="outDate" type="text" class="easyui-datebox"></td>
+##                    <td>返校时间（之前）:</td>
+##                    <td><input id="inDate" name="inDate" type="text" class="easyui-datebox"></td>
+                </tr>
+                </tbody>
+
+            </table>
+        </form>
+        <a href="#" class="easyui-linkbutton" iconcls="icon-search" onclick="doSearch()">查询</a>
+    </div>
+</div>
+<script src="$!{CONTEXT_PATH}/static/javascript/home/user/manager/trip.js"></script>

@@ -1,0 +1,14 @@
+<!-- easyui -->
+<script src="$!{CONTEXT_PATH}/static/easyui/jquery.min.js" type="text/javascript"></script>
+<script src="$!{CONTEXT_PATH}/static/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<script src="$!{CONTEXT_PATH}/static/js/manager.js"></script>
+<script type="text/javascript" src="$!{CONTEXT_PATH}/static/easyui/detailview.js"></script>
+<!-- Sweet-Alert  -->
+<script src="$!{CONTEXT_PATH}/static/plugins/sweetalert/sweetalert.min.js"></script>
+<!-- toast -->
+<script src="$!{CONTEXT_PATH}/static/plugins/toast-master/js/jquery.toast.js"></script>
+<!-- 自定义脚本  -->
+<script src="$!{CONTEXT_PATH}/static/javascript/common/myajax.js"></script>
+<script src="$!{CONTEXT_PATH}/static/javascript/common/myswal.js"></script>
+<script src="$!{CONTEXT_PATH}/static/javascript/common/mytoast.js"></script>
+<script src="$!{CONTEXT_PATH}/static/javascript/common/myself.js"></script>

@@ -1,0 +1,26 @@
+<!-- 底部 -->
+##<footer class="footer">
+##    <hr>
+##    <p align="center">寝室宿舍管理系统</p>
+##</footer>
+<div region="south" border="true" split="true" style="overflow: hidden; height: 40px;">
+    <div class="footer">版权所有：<a href="http://www.baidu.com">陈继赟</a></div>
+</div>
+<script language="JavaScript">
+    $(document).ready(function () {
+
+    });
+</script>
+<style>
+    .footer {
+        width: 100%;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .top-bg {
+        background-color: #d8e4fe;
+        height: 80px;
+    }
+
+</style>
